@@ -1,0 +1,13 @@
+{
+  "name": "velero-notifications",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "dotenv": "^16.0.0",
+    "memcached-node": "^0.1.0",
+    "memory-cache-pro": "^1.0.1",
+    "puppeteer": "^13.5.2"
+  }
+}

@@ -3,14 +3,17 @@
 Check Velero auctions and send notifications if these are available.
 👋 Hi, @minstn publishes his demo project to GitHub
 
+This code requires ```memcached``` service running on port ```11211```
+
 ## Configuration .env file
 
+```
 SENDGRID_KEY - Sendgrid API key, we use Sendgrid to send notification Emails
 RECEIVERS - Comma separared list of Emails to notify
 TARGET_CSS_CLASS - CSS class to search in the HTML code, contains all the values we need
 SENDER_EMAIL_ADDRESS - Example Velero DAO <velero@clickon.ch>
 LIQUIDATION_URL - https://liquidation.velero.finance
-
+```
 
 ## Code block with auctions
 

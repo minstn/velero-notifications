@@ -90,15 +90,6 @@ const getData = async (cache, forKey) => {
 				//update expiration to
 				console.log('Touching ...');
 				await connection.touch('veleroAuctions', 10*60 /*10 minutes*/);
-
-				const msg = {
-						to: process.env.RECEIVERS, // Change to your recipient
-						from: process.env.SENDER_EMAIL_ADDRESS, // Change to your verified sender
-						subject: `🤷 All bets are off on Velero DOA 🐶`,
-						text: `All bets are off`,
-						html: `<strong>All bets are off</strong>`
-					};
-				await sgMail.send(msg);
 			}
 		} else {
 			if(currentVeleroAsArray[0] !== '0'){

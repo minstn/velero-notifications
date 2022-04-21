@@ -3,7 +3,7 @@
 Check Velero auctions and send notifications if these are available.
 👋 Hi, @minstn publishes his demo project to GitHub
 
-This code requires ```memcached``` service running on port ```11211```
+This code requires ```memcached``` service running on localhost port ```11211```
 
 ## Configuration .env file
 

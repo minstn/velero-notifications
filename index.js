@@ -77,9 +77,9 @@ const getData = async (cache, forKey) => {
 					msg = {
 						to: process.env.RECEIVERS, // Change to your recipient
 						from: process.env.SENDER_EMAIL_ADDRESS, // Change to your verified sender
-						subject: `🤷 All bets are off on Velero DOA 🐶`,
+						subject: `🤷 All bets are off on Velero DOA 🐶 Timestamp: ${Date.now()}`,
 						text: `All bets are off`,
-						html: `<strong>All bets are off</strong>`
+						html: `<strong>All bets are off 🐶</strong>`
 					};
 				}
 
@@ -87,8 +87,8 @@ const getData = async (cache, forKey) => {
 
 				await connection.set('veleroAuctions', currentVeleroAsString, {isCompressed: false, expires: 10*60});
 			} else {
-				//update expiration to
 				console.log('Touching ...');
+				//update expiration time for the value in memcache
 				await connection.touch('veleroAuctions', 10*60 /*10 minutes*/);
 			}
 		} else {

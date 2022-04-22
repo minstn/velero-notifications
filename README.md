@@ -11,8 +11,9 @@ This code requires ```memcached``` service running on localhost port ```11211```
 SENDGRID_KEY - Sendgrid API key, we use Sendgrid to send notification Emails
 RECEIVERS - Comma separared list of Emails to notify
 TARGET_CSS_CLASS - CSS class to search in the HTML code, contains all the values we need
-SENDER_EMAIL_ADDRESS - Example Velero DAO <velero@clickon.ch>
+SENDER_EMAIL_ADDRESS - Example: Velero DAO <velero@clickon.ch>
 LIQUIDATION_URL - https://liquidation.velero.finance
+USER_AGENT - Example: Mozilla/5.0 (Macintosh; Intel Mac OS X 12_3_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15
 ```
 
 ## Code block with auctions
